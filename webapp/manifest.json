@@ -1,0 +1,86 @@
+{
+	"sap.app": {
+		"id": "nadzeya.kireyenka.app",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui": {
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": "nadzeya.kireyenka.app.view.App",
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "nadzeya.kireyenka.app.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"notFoundPage"
+					]
+				},
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "ProductsOverviewPage",
+					"target": [
+						"productsOverviewPage"
+					]
+				},
+				{
+					"pattern": "products/{productId}",
+					"name": "ProductDetailsPage",
+					"target": [
+						"productDetailsPage"
+					]
+				}
+			],
+			"targets": {
+				"productsOverviewPage": {
+					"viewName": "ProductsOverviewPage",
+					"viewId": "productsOverviewPage",
+					"viewLevel": 1
+				},
+				"productDetailsPage": {
+					"viewName": "ProductDetailsPage",
+					"viewId": "productDetailsPage",
+					"viewLevel": 2
+				},
+				"notFoundPage": {
+					"viewName": "NotFoundPage",
+					"viewId": "notFoundPage"
+				}
+			}
+		},
+		"dependencies": {
+			"minUI5Version": "1.54.0",
+			"libs": {
+				"sap.m": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "nadzeya.kireyenka.app.i18n.i18n"
+				}
+			}
+		}
+	}
+}
