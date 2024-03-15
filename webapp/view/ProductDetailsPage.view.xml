@@ -1,0 +1,21 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="nadzeya.kireyenka.app.controller.ProductDetailsPage"
+>
+    <Page title="Product Details">
+        <content>
+            <Button
+                type="Emphasized"
+                text="Go to product details"
+                press="onNavToProductDetailsPage"
+                class="sapUiSmallMarginEnd"
+            />
+            <Button
+                type="Reject"
+                text="Go to products overview"
+                press="onNavToProductsOverviewPage"
+            />
+        </content>
+    </Page>
+</mvc:View>
