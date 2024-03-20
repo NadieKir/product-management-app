@@ -1,15 +1,121 @@
 <mvc:View
-    xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:c="sap.ui.core"
     controllerName="nadzeya.kireyenka.app.controller.ProductsOverviewPage"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:u="sap.ui.unified"
+    xmlns="sap.m"
+    xmlns:t="sap.ui.table"
+    xmlns:f="sap.f"
+    xmlns:layout="sap.ui.layout"
+    xmlns:fb="sap.ui.comp.filterbar"
+    height="100%"
 >
-    <Page title="Products Overview">
-        <content>
-            <Button
-                type="Emphasized"
-                text="Go to product details"
-                press="onNavToProductDetailsPage"
-            />
-        </content>
-    </Page>
+    <f:DynamicPage
+        id="dynamicPageId"
+        preserveHeaderStateOnScroll="true"
+        headerExpanded="{/headerExpanded}"
+        showFooter="true"
+        fitContent="true"
+    >
+        <f:title>
+            <f:DynamicPageTitle>
+                <f:heading>
+                    <Title text="LeverX Warehouse" />
+                </f:heading>
+            </f:DynamicPageTitle>
+        </f:title>
+
+        <f:content>
+            <Table
+                id="ProductsTable"
+                items="{products>/}"
+                mode="MultiSelect"
+                sticky="ColumnHeaders"
+                noDataText="{i18n>ProductsNotFound}"
+            >
+                <headerToolbar>
+                    <OverflowToolbar>
+                        <Title
+                            text="Products"
+                            level="H2"
+                        />
+                        <ToolbarSpacer />
+                        <Button
+                            text="Create"
+                            type="Emphasized"
+                            icon="sap-icon://add"
+                        />
+                        <Button
+                            text="Delete"
+                            icon="sap-icon://delete"
+                            type="Transparent"
+                            enabled="false"
+                        />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column>
+                        <Text text="Name" />
+                    </Column>
+
+                    <Column hAlign="End">
+                        <Text text="Price" />
+                    </Column>
+
+                    <Column
+                        minScreenWidth="Medium"
+                        demandPopin="true"
+                    >
+                        <Text text="Description" />
+                    </Column>
+
+                    <Column
+                        minScreenWidth="Tablet"
+                        demandPopin="true"
+                    >
+                        <Text text="Release Date" />
+                    </Column>
+
+                    <Column
+                        minScreenWidth="Large"
+                        demandPopin="true"
+                    >
+                        <Text text="Rating" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem
+                        type="Navigation"
+                        press="onProductsTableItemPress"
+                        highlight="{= ${products>DiscountDate} ? 'Success' : 'None'}"
+                    >
+                        <ObjectIdentifier title="{products>Name}" />
+                        <ObjectNumber
+                            state="{= ${products>DiscountDate} ? 'Success' : 'None'}"
+                            number="{
+                            parts: ['products>Price'],
+                            type: 'sap.ui.model.type.Currency',
+                            formatOptions: {currencyCode : false, groupingSeparator: ' ', decimals: 0 }
+                        }"
+                            unit="USD"
+                        />
+                        <Text
+                            text="{products>Description}"
+                            wrapping="false"
+                        />
+                        <Text
+                            text="{products>ReleaseDate}"
+                            wrapping="false"
+                        />
+                        <RatingIndicator
+                            maxValue="5"
+                            value="{products>Rating}"
+                            iconSize="16px"
+                            editable="false"
+                        />
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </f:content>
+    </f:DynamicPage>
 </mvc:View>
