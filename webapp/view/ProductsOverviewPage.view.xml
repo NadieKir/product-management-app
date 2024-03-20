@@ -1,20 +1,12 @@
 <mvc:View
-    xmlns:c="sap.ui.core"
     controllerName="nadzeya.kireyenka.app.controller.ProductsOverviewPage"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:u="sap.ui.unified"
     xmlns="sap.m"
-    xmlns:t="sap.ui.table"
     xmlns:f="sap.f"
-    xmlns:layout="sap.ui.layout"
-    xmlns:fb="sap.ui.comp.filterbar"
     height="100%"
 >
     <f:DynamicPage
-        id="dynamicPageId"
         preserveHeaderStateOnScroll="true"
-        headerExpanded="{/headerExpanded}"
-        showFooter="true"
         fitContent="true"
     >
         <f:title>
@@ -27,11 +19,14 @@
 
         <f:content>
             <Table
-                id="ProductsTable"
+                id="idProductsTable"
                 items="{products>/}"
                 mode="MultiSelect"
+                multiSelectMode="ClearAll"
+                autoPopinMode="true"
                 sticky="ColumnHeaders"
                 noDataText="{i18n>ProductsNotFound}"
+                selectionChange="onTableSelectionChange"
             >
                 <headerToolbar>
                     <OverflowToolbar>
@@ -46,39 +41,45 @@
                             icon="sap-icon://add"
                         />
                         <Button
-                            text="Delete"
+                            text="Delete {= ${productsOverviewView>/selectedProducts}.length > 0 ? '(' + ${productsOverviewView>/selectedProducts}.length + ')' : ''}"
                             icon="sap-icon://delete"
                             type="Transparent"
-                            enabled="false"
+                            enabled="{= !!${productsOverviewView>/selectedProducts}.length}" 
                         />
                     </OverflowToolbar>
                 </headerToolbar>
                 <columns>
-                    <Column>
+                    <Column importance="High">
                         <Text text="Name" />
                     </Column>
 
-                    <Column hAlign="End">
+                    <Column
+                        importance="High"
+                        hAlign="End"
+                        width="7rem"
+                    >
                         <Text text="Price" />
                     </Column>
 
                     <Column
-                        minScreenWidth="Medium"
-                        demandPopin="true"
+                        importance="Low"
+                        autoPopinWidth="20"
                     >
                         <Text text="Description" />
                     </Column>
 
                     <Column
-                        minScreenWidth="Tablet"
-                        demandPopin="true"
+                        importance="Medium"
+                        autoPopinWidth="10"
+                        width="7rem"
                     >
                         <Text text="Release Date" />
                     </Column>
 
                     <Column
-                        minScreenWidth="Large"
-                        demandPopin="true"
+                        importance="Medium"
+                        autoPopinWidth="10"
+                        width="7rem"
                     >
                         <Text text="Rating" />
                     </Column>
@@ -86,7 +87,7 @@
                 <items>
                     <ColumnListItem
                         type="Navigation"
-                        press="onProductsTableItemPress"
+                        press="onColumnListItemPress"
                         highlight="{= ${products>DiscountDate} ? 'Success' : 'None'}"
                     >
                         <ObjectIdentifier title="{products>Name}" />
@@ -110,7 +111,7 @@
                         <RatingIndicator
                             maxValue="5"
                             value="{products>Rating}"
-                            iconSize="16px"
+                            iconSize="15px"
                             editable="false"
                         />
                     </ColumnListItem>
