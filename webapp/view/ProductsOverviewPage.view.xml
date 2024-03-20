@@ -12,7 +12,7 @@
         <f:title>
             <f:DynamicPageTitle>
                 <f:heading>
-                    <Title text="LeverX Warehouse" />
+                    <Title text="{i18n>ProductsOverviewTitle}" />
                 </f:heading>
             </f:DynamicPageTitle>
         </f:title>
@@ -31,17 +31,17 @@
                 <headerToolbar>
                     <OverflowToolbar>
                         <Title
-                            text="Products"
+                            text="{i18n>Products}"
                             level="H2"
                         />
                         <ToolbarSpacer />
                         <Button
-                            text="Create"
+                            text="{i18n>Create}"
                             type="Emphasized"
                             icon="sap-icon://add"
                         />
                         <Button
-                            text="Delete {= ${productsOverviewView>/selectedProducts}.length > 0 ? '(' + ${productsOverviewView>/selectedProducts}.length + ')' : ''}"
+                            text="{i18n>Delete} {= ${productsOverviewView>/selectedProducts}.length > 0 ? '(' + ${productsOverviewView>/selectedProducts}.length + ')' : ''}"
                             icon="sap-icon://delete"
                             type="Transparent"
                             enabled="{= !!${productsOverviewView>/selectedProducts}.length}" 
@@ -50,7 +50,7 @@
                 </headerToolbar>
                 <columns>
                     <Column importance="High">
-                        <Text text="Name" />
+                        <Text text="{i18n>Name}" />
                     </Column>
 
                     <Column
@@ -58,14 +58,14 @@
                         hAlign="End"
                         width="7rem"
                     >
-                        <Text text="Price" />
+                        <Text text="{i18n>Price}" />
                     </Column>
 
                     <Column
                         importance="Low"
                         autoPopinWidth="20"
                     >
-                        <Text text="Description" />
+                        <Text text="{i18n>Description}" />
                     </Column>
 
                     <Column
@@ -73,7 +73,7 @@
                         autoPopinWidth="10"
                         width="7rem"
                     >
-                        <Text text="Release Date" />
+                        <Text text="{i18n>ReleaseDate}" />
                     </Column>
 
                     <Column
@@ -81,7 +81,7 @@
                         autoPopinWidth="10"
                         width="7rem"
                     >
-                        <Text text="Rating" />
+                        <Text text="{i18n>Rating}" />
                     </Column>
                 </columns>
                 <items>

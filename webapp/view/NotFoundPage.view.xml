@@ -4,14 +4,14 @@
     xmlns="sap.m"
 >
     <MessagePage
-        title="Not Found"
-        text="The requested resource was not found"
+        title="{i18n>NotFoundPageTitle}"
+        text="{i18n>NotFoundPageText}"
         icon="{sap-icon://document}"
     >
         <customDescription>
             <Link
-                text="Go home page"
-                press="onNavToProductsOverviewPage"
+                text="{i18n>NotFoundPageActionText}"
+                press="onGoHomePageLinkPress"
             />
         </customDescription>
     </MessagePage>
