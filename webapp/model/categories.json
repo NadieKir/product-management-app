@@ -1,25 +1,25 @@
 [
   {
     "Id": "1",
-    "Name": "phone"
+    "Name": "Phone"
   },
   {
     "Id": "2",
-    "Name": "laptop"
+    "Name": "Laptop"
   },
   {
     "Id": "3",
-    "Name": "smartwatch"
+    "Name": "Smartwatch"
   },
   {
     "Id": "4",
-    "Name": "headphones"
+    "Name": "Headphones"
   },
   {
     "Id": "5",
     "SubcategoryFor": {
       "Id": "1",
-      "Name": "phone"
+      "Name": "Phone"
     },
     "Name": "iOS"
   },
@@ -27,15 +27,15 @@
     "Id": "6",
     "SubcategoryFor": {
       "Id": "1",
-      "Name": "phone"
+      "Name": "Phone"
     },
-    "Name": "AndroId"
+    "Name": "Android"
   },
   {
     "Id": "7",
     "SubcategoryFor": {
       "Id": "2",
-      "Name": "laptop"
+      "Name": "Laptop"
     },
     "Name": "Intel Core i5"
   },
@@ -43,7 +43,7 @@
     "Id": "8",
     "SubcategoryFor": {
       "Id": "2",
-      "Name": "laptop"
+      "Name": "Laptop"
     },
     "Name": "AMD Ryzen 9"
   },
@@ -51,7 +51,7 @@
     "Id": "9",
     "SubcategoryFor": {
       "Id": "2",
-      "Name": "laptop"
+      "Name": "Laptop"
     },
     "Name": "M1"
   },
@@ -59,7 +59,7 @@
     "Id": "10",
     "SubcategoryFor": {
       "Id": "3",
-      "Name": "smartwatch"
+      "Name": "Smartwatch"
     },
     "Name": "Apple"
   },
@@ -67,7 +67,7 @@
     "Id": "11",
     "SubcategoryFor": {
       "Id": "3",
-      "Name": "smartwatch"
+      "Name": "Smartwatch"
     },
     "Name": "Huawei"
   },
@@ -75,7 +75,7 @@
     "Id": "12",
     "SubcategoryFor": {
       "Id": "3",
-      "Name": "smartwatch"
+      "Name": "Smartwatch"
     },
     "Name": "Xiaomi"
   },
@@ -83,7 +83,7 @@
     "Id": "13",
     "SubcategoryFor": {
       "Id": "4",
-      "Name": "headphones"
+      "Name": "Headphones"
     },
     "Name": "Wired"
   },
@@ -91,7 +91,7 @@
     "Id": "14",
     "SubcategoryFor": {
       "Id": "4",
-      "Name": "headphones"
+      "Name": "Headphones"
     },
     "Name": "Wireless"
   }

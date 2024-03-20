@@ -10,13 +10,13 @@
     "Categories": [
       {
         "Id": "3",
-        "Name": "smartwatch"
+        "Name": "Smartwatch"
       },
       {
         "Id": "10",
         "SubCategoryFor": {
           "Id": "3",
-          "Name": "smartwatch"
+          "Name": "Smartwatch"
         },
         "Name": "Apple"
       }
@@ -53,13 +53,13 @@
     "Categories": [
       {
         "Id": "4",
-        "Name": "headphones"
+        "Name": "Headphones"
       },
       {
         "Id": "14",
         "SubCategoryFor": {
           "Id": "4",
-          "Name": "headphones"
+          "Name": "Headphones"
         },
         "Name": "Wireless"
       }
@@ -105,13 +105,13 @@
     "Categories": [
       {
         "Id": "1",
-        "Name": "phone"
+        "Name": "Phone"
       },
       {
         "Id": "5",
         "SubCategoryFor": {
           "Id": "1",
-          "Name": "phone"
+          "Name": "Phone"
         },
         "Name": "iOS"
       }
@@ -149,13 +149,13 @@
     "Categories": [
       {
         "Id": "2",
-        "Name": "laptop"
+        "Name": "Laptop"
       },
       {
         "Id": "8",
         "SubCategoryFor": {
           "Id": "2",
-          "Name": "laptop"
+          "Name": "Laptop"
         },
         "Name": "AMD Ryzen 9"
       }
@@ -206,15 +206,15 @@
     "Categories": [
       {
         "Id": "1",
-        "Name": "phone"
+        "Name": "Phone"
       },
       {
         "Id": "6",
         "SubCategoryFor": {
           "Id": "1",
-          "Name": "phone"
+          "Name": "Phone"
         },
-        "Name": "AndroId"
+        "Name": "Android"
       }
     ],
     "Suppliers": [
@@ -249,13 +249,13 @@
     "Categories": [
       {
         "Id": "2",
-        "Name": "laptop"
+        "Name": "Laptop"
       },
       {
         "Id": "9",
         "SubCategoryFor": {
           "Id": "2",
-          "Name": "laptop"
+          "Name": "Laptop"
         },
         "Name": "M1"
       }
@@ -315,15 +315,15 @@
     "Categories": [
       {
         "Id": "1",
-        "Name": "phone"
+        "Name": "Phone"
       },
       {
         "Id": "6",
         "SubCategoryFor": {
           "Id": "1",
-          "Name": "phone"
+          "Name": "Phone"
         },
-        "Name": "AndroId"
+        "Name": "Android"
       }
     ],
     "Suppliers": [
@@ -363,13 +363,13 @@
     "Categories": [
       {
         "Id": "3",
-        "Name": "smartwatch"
+        "Name": "Smartwatch"
       },
       {
         "Id": "12",
         "SubCategoryFor": {
           "Id": "3",
-          "Name": "smartwatch"
+          "Name": "Smartwatch"
         },
         "Name": "Xiaomi"
       }
@@ -416,13 +416,13 @@
     "Categories": [
       {
         "Id": "4",
-        "Name": "headphones"
+        "Name": "Headphones"
       },
       {
         "Id": "13",
         "SubCategoryFor": {
           "Id": "4",
-          "Name": "headphones"
+          "Name": "Headphones"
         },
         "Name": "Wired"
       }
@@ -460,13 +460,13 @@
     "Categories": [
       {
         "Id": "2",
-        "Name": "laptop"
+        "Name": "Laptop"
       },
       {
         "Id": "7",
         "SubCategoryFor": {
           "Id": "2",
-          "Name": "laptop"
+          "Name": "Laptop"
         },
         "Name": "Intel Core i5"
       }
