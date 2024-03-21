@@ -11,7 +11,7 @@
         <customDescription>
             <Link
                 text="{i18n>NotFoundPageActionText}"
-                press="onGoHomePageLinkPress"
+                press="onNavToProductsOverviewPage"
             />
         </customDescription>
     </MessagePage>

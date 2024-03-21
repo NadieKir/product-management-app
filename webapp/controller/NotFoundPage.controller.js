@@ -1,9 +1,9 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
+sap.ui.define(["nadzeya/kireyenka/app/controller/BaseController"], function (BaseController) {
   "use strict";
 
-  return Controller.extend("nadzeya.kireyenka.app.controller.NotFoundPage", {
-    onGoHomePageLinkPress: function () {
-      this.getOwnerComponent().getRouter().navTo("ProductsOverviewPage");
+  return BaseController.extend("nadzeya.kireyenka.app.controller.NotFoundPage", {
+    onNavToProductsOverviewPage: function () {
+      this.getRouter().navTo("ProductsOverviewPage");
     },
   });
 });

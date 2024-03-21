@@ -3,12 +3,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
 
   return Controller.extend("nadzeya.kireyenka.app.controller.BaseController", {
     getRouter: function () {
-      const oComponent = this.getOwnerComponent();
-
-      return oComponent.getRouter();
+      return this.getOwnerComponent().getRouter();
     },
 
-    i18n: function (sKey, ...aArgs) {
+    getLocalizedString: function (sKey, ...aArgs) {
       const oResourceBundle = this.getOwnerComponent().getModel("i18n").getResourceBundle();
 
       return oResourceBundle.getText(sKey, aArgs);

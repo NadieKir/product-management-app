@@ -65,7 +65,7 @@
                             <fb:FilterGroupItem name="ReleaseDate" label="{i18n>ReleaseDate}" groupName="productFiltersGroup" visibleInFilterBar="true">
                                 <fb:control>
                                     <DateRangeSelection 
-                                        id="idReleaseDateDateRangeSelection" 
+                                        id="idReleaseDateRangeSelection" 
                                         placeholder="{i18n>ReleaseDatePlaceholder}">
                                     </DateRangeSelection>
                                 </fb:control>
@@ -100,7 +100,10 @@
                             icon="sap-icon://add"
                         />
                         <Button
-                            text="{i18n>Delete} {= ${productsOverviewView>/selectedProducts}.length > 0 ? '(' + ${productsOverviewView>/selectedProducts}.length + ')' : ''}"
+                            text="{i18n>Delete} {
+                                path: 'productsOverviewView>/selectedProducts',
+                                formatter: '.deleteProductsButtonTextFormatter'
+                            }"
                             icon="sap-icon://delete"
                             type="Transparent"
                             enabled="{= !!${productsOverviewView>/selectedProducts}.length}" 

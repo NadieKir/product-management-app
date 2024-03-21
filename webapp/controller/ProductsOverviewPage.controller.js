@@ -1,31 +1,44 @@
-sap.ui.define(["./BaseController", "sap/ui/model/json/JSONModel"], function (BaseController, JSONModel) {
-  "use strict";
+sap.ui.define(
+  [
+    "nadzeya/kireyenka/app/controller/BaseController",
+    "sap/ui/model/json/JSONModel",
+    "nadzeya/kireyenka/app/model/formatter/formatter",
+    "nadzeya/kireyenka/app/model/productModel",
+    "nadzeya/kireyenka/app/model/categoryModel",
+    "nadzeya/kireyenka/app/model/supplierModel",
+  ],
+  function (BaseController, JSONModel, formatter, productModel, categoryModel, supplierModel) {
+    "use strict";
 
-  return BaseController.extend("nadzeya.kireyenka.app.controller.ProductsOverviewPage", {
-    onInit: function () {
-      const oView = this.getView();
-      const oProducts = new JSONModel("model/products.json");
-      const oCategories = new JSONModel("model/categories.json");
-      const oSuppliers = new JSONModel("model/suppliers.json");
-      const oProductsOverviewViewModel = new JSONModel({ selectedProducts: [] });
+    return BaseController.extend("nadzeya.kireyenka.app.controller.ProductsOverviewPage", {
+      deleteProductsButtonTextFormatter: formatter.deleteProductsButtonTextFormatter,
 
-      const sCurrentTimestamp = new Date();
+      onInit: function () {
+        const oView = this.getView();
+        const oProductsOverviewViewModel = new JSONModel({ selectedProducts: [] });
 
-      oView.setModel(oProducts, "products");
-      oView.setModel(oCategories, "categories");
-      oView.setModel(oSuppliers, "suppliers");
-      oView.setModel(oProductsOverviewViewModel, "productsOverviewView");
+        oView.setModel(productModel.getModel(), "products");
+        oView.setModel(categoryModel.getModel(), "categories");
+        oView.setModel(supplierModel.getModel(), "suppliers");
+        oView.setModel(oProductsOverviewViewModel, "productsOverviewView");
 
-      this.byId("idReleaseDateDateRangeSelection").setMaxDate(sCurrentTimestamp);
-    },
+        this.initializeDateRangeSelection();
+      },
 
-    onColumnListItemPress: function () {},
+      initializeDateRangeSelection: function () {
+        const sCurrentTimestamp = new Date();
 
-    onTableSelectionChange: function () {
-      const oViewModel = this.getView().getModel("productsOverviewView");
-      const aSelectedItems = this.byId("idProductsTable").getSelectedItems();
+        this.byId("idReleaseDateRangeSelection").setMaxDate(sCurrentTimestamp);
+      },
 
-      oViewModel.setProperty("/selectedProducts", aSelectedItems);
-    },
-  });
-});
+      onColumnListItemPress: function () {},
+
+      onTableSelectionChange: function () {
+        const oViewModel = this.getView().getModel("productsOverviewView");
+        const aSelectedItems = this.byId("idProductsTable").getSelectedItems();
+
+        oViewModel.setProperty("/selectedProducts", aSelectedItems);
+      },
+    });
+  }
+);
