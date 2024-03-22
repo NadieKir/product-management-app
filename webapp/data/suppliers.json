@@ -1,0 +1,47 @@
+[
+  {
+    "Id": "1",
+    "Name": "Greenfield Suppliers",
+    "Street": "123 Main Street",
+    "City": "Los Angeles",
+    "State": "California",
+    "ZipCode": 73235,
+    "Country": "USA"
+  },
+  {
+    "Id": "2",
+    "Name": "Summit Sourcing",
+    "Street": "456 Elm Street",
+    "City": "Toronto",
+    "State": "Ontario",
+    "ZipCode": 63567,
+    "Country": "Canada"
+  },
+  {
+    "Id": "3",
+    "Name": "Pacific Importers",
+    "Street": "789 Maple Avenue",
+    "City": "London",
+    "State": "England",
+    "ZipCode": 86422,
+    "Country": "United Kingdom"
+  },
+  {
+    "Id": "4",
+    "Name": "Golden Harvest Trading",
+    "Street": "1010 Oak Street",
+    "City": "Sydney",
+    "State": "New South Wales",
+    "ZipCode": 67774,
+    "Country": "Australia"
+  },
+  {
+    "Id": "5",
+    "Name": "Silver Oak Enterprises",
+    "Street": "1111 Cedar Street",
+    "City": "Paris",
+    "State": "Île-de-France",
+    "ZipCode": 75000,
+    "Country": "France"
+  }
+]

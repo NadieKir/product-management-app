@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "1",
+    "Name": "Phone"
+  },
+  {
+    "Id": "2",
+    "Name": "Laptop"
+  },
+  {
+    "Id": "3",
+    "Name": "Smartwatch"
+  },
+  {
+    "Id": "4",
+    "Name": "Headphones"
+  },
+  {
+    "Id": "5",
+    "SubcategoryFor": {
+      "Id": "1",
+      "Name": "Phone"
+    },
+    "Name": "iOS"
+  },
+  {
+    "Id": "6",
+    "SubcategoryFor": {
+      "Id": "1",
+      "Name": "Phone"
+    },
+    "Name": "Android"
+  },
+  {
+    "Id": "7",
+    "SubcategoryFor": {
+      "Id": "2",
+      "Name": "Laptop"
+    },
+    "Name": "Intel Core i5"
+  },
+  {
+    "Id": "8",
+    "SubcategoryFor": {
+      "Id": "2",
+      "Name": "Laptop"
+    },
+    "Name": "AMD Ryzen 9"
+  },
+  {
+    "Id": "9",
+    "SubcategoryFor": {
+      "Id": "2",
+      "Name": "Laptop"
+    },
+    "Name": "M1"
+  },
+  {
+    "Id": "10",
+    "SubcategoryFor": {
+      "Id": "3",
+      "Name": "Smartwatch"
+    },
+    "Name": "Apple"
+  },
+  {
+    "Id": "11",
+    "SubcategoryFor": {
+      "Id": "3",
+      "Name": "Smartwatch"
+    },
+    "Name": "Huawei"
+  },
+  {
+    "Id": "12",
+    "SubcategoryFor": {
+      "Id": "3",
+      "Name": "Smartwatch"
+    },
+    "Name": "Xiaomi"
+  },
+  {
+    "Id": "13",
+    "SubcategoryFor": {
+      "Id": "4",
+      "Name": "Headphones"
+    },
+    "Name": "Wired"
+  },
+  {
+    "Id": "14",
+    "SubcategoryFor": {
+      "Id": "4",
+      "Name": "Headphones"
+    },
+    "Name": "Wireless"
+  }
+]

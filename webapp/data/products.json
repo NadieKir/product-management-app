@@ -1,0 +1,505 @@
+[
+  {
+    "Id": "1",
+    "Name": "Smartwatch Series X",
+    "Description": "Advanced smartwatch with fitness tracking and GPS",
+    "Rating": 4,
+    "ReleaseDate": "2022-06-15",
+    "DiscountDate": "2022-07-01",
+    "Price": 129.99,
+    "Categories": [
+      {
+        "Id": "3",
+        "Name": "Smartwatch"
+      },
+      {
+        "Id": "10",
+        "SubCategoryFor": {
+          "Id": "3",
+          "Name": "Smartwatch"
+        },
+        "Name": "Apple"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "1",
+        "Name": "Greenfield Suppliers",
+        "Street": "123 Main Street",
+        "City": "Los Angeles",
+        "State": "California",
+        "ZipCode": 73235,
+        "Country": "USA"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "1",
+        "Comment": "Small in size, but big on features."
+      },
+      {
+        "Id": "2",
+        "Comment": "This device proves that good things come in small packages."
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "Wireless Noise-Canceling Headphones",
+    "Description": "Immersive sound experience with active noise cancellation",
+    "Rating": 5,
+    "ReleaseDate": "2022-05-20",
+    "Price": 199.99,
+    "Categories": [
+      {
+        "Id": "4",
+        "Name": "Headphones"
+      },
+      {
+        "Id": "14",
+        "SubCategoryFor": {
+          "Id": "4",
+          "Name": "Headphones"
+        },
+        "Name": "Wireless"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "2",
+        "Name": "Summit Sourcing",
+        "Street": "456 Elm Street",
+        "City": "Toronto",
+        "State": "Ontario",
+        "ZipCode": 63567,
+        "Country": "Canada"
+      },
+      {
+        "Id": "3",
+        "Name": "Pacific Importers",
+        "Street": "789 Maple Avenue",
+        "City": "London",
+        "State": "England",
+        "ZipCode": 86422,
+        "Country": "United Kingdom"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "3",
+        "Comment": "It's a handy little gadget to have around."
+      },
+      {
+        "Id": "4",
+        "Comment": "This device is portable and convenient for traveling."
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "Iphone 15 Pro",
+    "Description": "Professional-grade phone for stunning photography",
+    "Rating": 3,
+    "ReleaseDate": "2022-04-18",
+    "Price": 799.99,
+    "Categories": [
+      {
+        "Id": "1",
+        "Name": "Phone"
+      },
+      {
+        "Id": "5",
+        "SubCategoryFor": {
+          "Id": "1",
+          "Name": "Phone"
+        },
+        "Name": "iOS"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "3",
+        "Name": "Pacific Importers",
+        "Street": "789 Maple Avenue",
+        "City": "London",
+        "State": "England",
+        "ZipCode": 86422,
+        "Country": "United Kingdom"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "5",
+        "Comment": "The small size doesn't compromise its performance."
+      },
+      {
+        "Id": "6",
+        "Comment": "Perfect for small spaces, yet powerful."
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "Gaming Laptop 1TB SSD",
+    "Description": "High-performance laptop for gaming enthusiasts",
+    "Rating": 4,
+    "ReleaseDate": "2022-03-25",
+    "DiscountDate": "2022-04-15",
+    "Price": 1499.99,
+    "Categories": [
+      {
+        "Id": "2",
+        "Name": "Laptop"
+      },
+      {
+        "Id": "8",
+        "SubCategoryFor": {
+          "Id": "2",
+          "Name": "Laptop"
+        },
+        "Name": "AMD Ryzen 9"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "3",
+        "Name": "Pacific Importers",
+        "Street": "789 Maple Avenue",
+        "City": "London",
+        "State": "England",
+        "ZipCode": 86422,
+        "Country": "United Kingdom"
+      },
+      {
+        "Id": "4",
+        "Name": "Golden Harvest Trading",
+        "Street": "1010 Oak Street",
+        "City": "Sydney",
+        "State": "New South Wales",
+        "ZipCode": 67774,
+        "Country": "Australia"
+      },
+      {
+        "Id": "5",
+        "Name": "Silver Oak Enterprises",
+        "Street": "1111 Cedar Street",
+        "City": "Paris",
+        "State": "Île-de-France",
+        "ZipCode": 75000,
+        "Country": "France"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "7",
+        "Comment": "Ideal for on-the-go use."
+      }
+    ]
+  },
+  {
+    "Id": "5",
+    "Name": "Honor 70",
+    "Description": "Compact phone with rich sound quality",
+    "Rating": 4,
+    "ReleaseDate": "2022-02-10",
+    "Price": 79.99,
+    "Categories": [
+      {
+        "Id": "1",
+        "Name": "Phone"
+      },
+      {
+        "Id": "6",
+        "SubCategoryFor": {
+          "Id": "1",
+          "Name": "Phone"
+        },
+        "Name": "Android"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "5",
+        "Name": "Silver Oak Enterprises",
+        "Street": "1111 Cedar Street",
+        "City": "Paris",
+        "State": "Île-de-France",
+        "ZipCode": 75000,
+        "Country": "France"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "8",
+        "Comment": "Great for everyday use and easy storage."
+      },
+      {
+        "Id": "9",
+        "Comment": "The device offers big functionality in a small package."
+      }
+    ]
+  },
+  {
+    "Id": "6",
+    "Name": "MacBook Air 15",
+    "Description": "MacBook Air is completely transformed by the power of Apple-designed M1 chip. Up to 3.5x faster CPU, 5x faster graphics, and 18 hours of battery life.",
+    "Rating": 5,
+    "ReleaseDate": "2021-12-28",
+    "Price": 1249.99,
+    "Categories": [
+      {
+        "Id": "2",
+        "Name": "Laptop"
+      },
+      {
+        "Id": "9",
+        "SubCategoryFor": {
+          "Id": "2",
+          "Name": "Laptop"
+        },
+        "Name": "M1"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "1",
+        "Name": "Greenfield Suppliers",
+        "Street": "123 Main Street",
+        "City": "Los Angeles",
+        "State": "California",
+        "ZipCode": 73235,
+        "Country": "USA"
+      },
+      {
+        "Id": "2",
+        "Name": "Summit Sourcing",
+        "Street": "456 Elm Street",
+        "City": "Toronto",
+        "State": "Ontario",
+        "ZipCode": 63567,
+        "Country": "Canada"
+      },
+      {
+        "Id": "3",
+        "Name": "Pacific Importers",
+        "Street": "789 Maple Avenue",
+        "City": "London",
+        "State": "England",
+        "ZipCode": 86422,
+        "Country": "United Kingdom"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "10",
+        "Comment": "Small but mighty - it gets the job done!"
+      },
+      {
+        "Id": "11",
+        "Comment": "This device's small footprint is a major advantage."
+      },
+      {
+        "Id": "12",
+        "Comment": "A small wonder that delivers impressive results."
+      }
+    ]
+  },
+  {
+    "Id": "7",
+    "Name": "Samsung Galaxy S23",
+    "Description": "50MP camera for high-resolution stunners. Fastest mobile processor yet. Enhanced low-light selfies. Made with eco-conscious materials.",
+    "Rating": 5,
+    "ReleaseDate": "2021-11-15",
+    "DiscountDate": "2021-12-01",
+    "Price": 829.99,
+    "Categories": [
+      {
+        "Id": "1",
+        "Name": "Phone"
+      },
+      {
+        "Id": "6",
+        "SubCategoryFor": {
+          "Id": "1",
+          "Name": "Phone"
+        },
+        "Name": "Android"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "1",
+        "Name": "Greenfield Suppliers",
+        "Street": "123 Main Street",
+        "City": "Los Angeles",
+        "State": "California",
+        "ZipCode": 73235,
+        "Country": "USA"
+      },
+      {
+        "Id": "3",
+        "Name": "Pacific Importers",
+        "Street": "789 Maple Avenue",
+        "City": "London",
+        "State": "England",
+        "ZipCode": 86422,
+        "Country": "United Kingdom"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "13",
+        "Comment": "Compact and efficient - a must-have for tech lovers."
+      }
+    ]
+  },
+  {
+    "Id": "8",
+    "Name": "Xiaomi Band 8",
+    "Description": "Immersive viewing experience with crystal-clear resolution",
+    "Rating": 1,
+    "ReleaseDate": "2021-10-20",
+    "Price": 89.99,
+    "Categories": [
+      {
+        "Id": "3",
+        "Name": "Smartwatch"
+      },
+      {
+        "Id": "12",
+        "SubCategoryFor": {
+          "Id": "3",
+          "Name": "Smartwatch"
+        },
+        "Name": "Xiaomi"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "2",
+        "Name": "Summit Sourcing",
+        "Street": "456 Elm Street",
+        "City": "Toronto",
+        "State": "Ontario",
+        "ZipCode": 63567,
+        "Country": "Canada"
+      },
+      {
+        "Id": "5",
+        "Name": "Silver Oak Enterprises",
+        "Street": "1111 Cedar Street",
+        "City": "Paris",
+        "State": "Île-de-France",
+        "ZipCode": 75000,
+        "Country": "France"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "14",
+        "Comment": "Small in size, but big on features."
+      },
+      {
+        "Id": "15",
+        "Comment": "This device proves that good things come in small packages."
+      }
+    ]
+  },
+  {
+    "Id": "9",
+    "Name": "Chinese Headphones",
+    "Description": "Functional headphones for tech-savvy professionals",
+    "Rating": 4,
+    "ReleaseDate": "2021-09-05",
+    "DiscountDate": "2021-09-30",
+    "Price": 49.99,
+    "Categories": [
+      {
+        "Id": "4",
+        "Name": "Headphones"
+      },
+      {
+        "Id": "13",
+        "SubCategoryFor": {
+          "Id": "4",
+          "Name": "Headphones"
+        },
+        "Name": "Wired"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "1",
+        "Name": "Greenfield Suppliers",
+        "Street": "123 Main Street",
+        "City": "Los Angeles",
+        "State": "California",
+        "ZipCode": 73235,
+        "Country": "USA"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "16",
+        "Comment": "Small but mighty - it gets the job done!"
+      },
+      {
+        "Id": "17",
+        "Comment": "This device's small footprint is a major advantage."
+      }
+    ]
+  },
+  {
+    "Id": "10",
+    "Name": "Asus Vivobook",
+    "Description": "Boasting a sleek design, powerful performance driven by our fastest mobile processor, and a stunning 50MP camera for high-resolution visuals, this laptop is perfect for work and play. ",
+    "Rating": 5,
+    "ReleaseDate": "2021-08-12",
+    "DiscountDate": "2021-09-01",
+    "Price": 899.99,
+    "Categories": [
+      {
+        "Id": "2",
+        "Name": "Laptop"
+      },
+      {
+        "Id": "7",
+        "SubCategoryFor": {
+          "Id": "2",
+          "Name": "Laptop"
+        },
+        "Name": "Intel Core i5"
+      }
+    ],
+    "Suppliers": [
+      {
+        "Id": "2",
+        "Name": "Summit Sourcing",
+        "Street": "456 Elm Street",
+        "City": "Toronto",
+        "State": "Ontario",
+        "ZipCode": 63567,
+        "Country": "Canada"
+      },
+      {
+        "Id": "3",
+        "Name": "Pacific Importers",
+        "Street": "789 Maple Avenue",
+        "City": "London",
+        "State": "England",
+        "ZipCode": 86422,
+        "Country": "United Kingdom"
+      }
+    ],
+    "Comments": [
+      {
+        "Id": "18",
+        "Comment": "A small wonder that delivers impressive results."
+      },
+      {
+        "Id": "19",
+        "Comment": "Compact and efficient - a must-have for tech lovers."
+      }
+    ]
+  }
+]
