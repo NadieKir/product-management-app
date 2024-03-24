@@ -102,11 +102,13 @@
                         <Button
                             text="{i18n>Delete} {
                                 path: 'productsOverviewView>/selectedProducts',
-                                formatter: '.deleteProductsButtonTextFormatter'
+                                formatter: '.formatter.deleteProductsButtonTextFormatter'
                             }"
                             icon="sap-icon://delete"
                             type="Transparent"
-                            enabled="{= !!${productsOverviewView>/selectedProducts}.length}" 
+                            enabled="{= !!${productsOverviewView>/selectedProducts}.length}"
+                            press="onDeleteProductButtonPress"
+                            ariaHasPopup="Dialog"
                         />
                     </OverflowToolbar>
                 </headerToolbar>
