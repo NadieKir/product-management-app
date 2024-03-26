@@ -33,9 +33,7 @@ sap.ui.define(
         oView.setModel(supplierModel.getModel(), "suppliers");
         oView.setModel(oProductsOverviewViewModel, "productsOverviewView");
 
-        this.oView = oView;
         this.oViewModel = oView.getModel("productsOverviewView");
-        this.productsTable = this.byId("idProductsTable");
       },
 
       onBeforeRendering: function () {
@@ -49,11 +47,11 @@ sap.ui.define(
       },
 
       onTableSelectionChange: function () {
-        const oProductsModel = this.oView.getModel("products");
-        const aSelectedItems = this.productsTable.getSelectedItems();
+        const oProductsModel = this.getView().getModel("products");
+        const aSelectedItems = this.byId("idProductsTable").getSelectedItems();
 
         const aSelectedItemsData = aSelectedItems.map((oItem) => {
-          const sPath = oItem.getBindingContext("products").sPath;
+          const sPath = oItem.getBindingContext("products").getPath();
 
           return oProductsModel.getProperty(sPath);
         });
@@ -94,9 +92,9 @@ sap.ui.define(
 
         productModel.deleteByIds(aProductsToDeleteIds);
 
-        this.oView.setModel(productModel.getModel(), "products");
+        this.getView().setModel(productModel.getModel(), "products");
         this.oViewModel.setProperty("/selectedProducts", []);
-        this.productsTable.removeSelections();
+        this.byId("idProductsTable").removeSelections();
       },
     });
   }
